@@ -1,4 +1,5 @@
 .cdac-front {
+	--cdac-front-button-radius: 6px;
 	color: #1c0d0a;
 	font-family: "DM Sans", Arial, sans-serif;
 	margin: 24px 0;
@@ -138,19 +139,22 @@
 	padding: 12px;
 }
 
-.cdac-front-button {
+.cdac-front-button,
+.cdac-front input[type="submit"] {
 	background: #ff6210;
 	border: 1px solid #ff6210;
-	border-radius: 999px;
+	border-radius: var(--cdac-front-button-radius);
 	color: #000000;
 	cursor: pointer;
 	font-weight: 800;
-	min-height: 44px;
-	padding: 11px 16px;
+	min-height: 40px;
+	padding: 9px 14px;
 }
 
 .cdac-front-button:hover,
-.cdac-front-button:focus {
+.cdac-front-button:focus,
+.cdac-front input[type="submit"]:hover,
+.cdac-front input[type="submit"]:focus {
 	background: #f15808;
 	color: #000000;
 }
@@ -158,13 +162,13 @@
 .cdac-front-secondary {
 	background: #ffffff;
 	border: 1px solid #e5d7d1;
-	border-radius: 999px;
+	border-radius: var(--cdac-front-button-radius);
 	color: #1c0d0a;
 	cursor: pointer;
 	font-weight: 800;
 	margin-top: 8px;
-	min-height: 40px;
-	padding: 9px 12px;
+	min-height: 38px;
+	padding: 8px 12px;
 	width: 100%;
 }
 
