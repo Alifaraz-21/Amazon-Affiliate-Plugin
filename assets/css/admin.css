@@ -8,6 +8,7 @@
 	--cdac-green: #ff6210;
 	--cdac-dark: #140b06;
 	--cdac-shadow: 0 14px 34px rgba(28, 13, 10, 0.08);
+	--cdac-button-radius: 6px;
 	color: var(--cdac-ink);
 	font-family: "DM Sans", Arial, sans-serif;
 }
@@ -55,12 +56,12 @@
 
 .cdac-brand-mark {
 	background: var(--cdac-blue);
-	border-radius: 999px;
+	border-radius: var(--cdac-button-radius);
 	color: #ffffff;
 	display: inline-flex;
 	font-weight: 800;
 	line-height: 1;
-	padding: 8px 12px;
+	padding: 7px 10px;
 }
 
 .cdac-eyebrow {
@@ -83,12 +84,12 @@
 .cdac-tabs a {
 	background: #ffffff;
 	border: 1px solid var(--cdac-line);
-	border-radius: 999px;
+	border-radius: var(--cdac-button-radius);
 	color: var(--cdac-ink);
 	display: inline-flex;
 	font-weight: 650;
 	line-height: 1;
-	padding: 11px 14px;
+	padding: 9px 12px;
 }
 
 .cdac-tabs a.is-active {
@@ -208,15 +209,15 @@
 	align-items: center;
 	background: #ffffff;
 	border: 1px solid var(--cdac-line);
-	border-radius: 999px;
+	border-radius: var(--cdac-button-radius);
 	color: var(--cdac-ink);
 	cursor: pointer;
 	display: inline-flex;
 	font-weight: 700;
 	gap: 8px;
 	justify-content: center;
-	min-height: 40px;
-	padding: 10px 14px;
+	min-height: 38px;
+	padding: 8px 13px;
 }
 
 .cdac-button-primary {
