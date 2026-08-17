@@ -2,7 +2,7 @@
 /**
  * Plugin Name: CtrlDeals Affiliate Operations
  * Description: Public deals/search plus private agent/admin Add to Cart URL generation, logging, listings, and sales attribution.
- * Version: 0.3.1
+ * Version: 0.3.2
  * Author: CTRDeals
  * Text Domain: ctrldeals-agent-crm
  */
@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'CDAC_VERSION', '0.3.1' );
+define( 'CDAC_VERSION', '0.3.2' );
 define( 'CDAC_FILE', __FILE__ );
 define( 'CDAC_PATH', plugin_dir_path( __FILE__ ) );
 define( 'CDAC_URL', plugin_dir_url( __FILE__ ) );
