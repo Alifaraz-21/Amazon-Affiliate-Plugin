@@ -474,8 +474,4 @@
 		grid-template-columns: 1fr;
 	}
 
-	.cdac-product-grid,
-	.cdac-copy-box {
-		grid-template-columns: 1fr;
-	}
 }
