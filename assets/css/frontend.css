@@ -187,14 +187,3 @@
 	margin-bottom: 12px;
 	padding: 12px;
 }
-
-@media (max-width: 720px) {
-	.cdac-front-grid {
-		grid-template-columns: 1fr;
-	}
-
-	.cdac-public-search,
-	.cdac-public-grid {
-		grid-template-columns: 1fr;
-	}
-}

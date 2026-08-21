@@ -23,17 +23,4 @@ require_once CDAC_PATH . 'includes/class-cdac-agent.php';
 
 register_activation_hook( __FILE__, array( 'CDAC_Activator', 'activate' ) );
 register_deactivation_hook( __FILE__, array( 'CDAC_Activator', 'deactivate' ) );
-
-add_action(
-	'plugins_loaded',
-	function () {
-		CDAC_Activator::maybe_upgrade();
-
-		$repository = new CDAC_Repository();
-
-		new CDAC_Admin( $repository );
-		new CDAC_Agent( $repository );
-	}
-);
-
 add_action( 'cdac_daily_associates_sync', array( 'CDAC_Activator', 'run_scheduled_sync' ) );

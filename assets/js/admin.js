@@ -8,7 +8,6 @@
 		var quantity = Math.max(1, toNumber((scope.querySelector('[data-cdac-quantity]') || {}).value));
 		var unit = toNumber((scope.querySelector('[data-cdac-cost="unit"]') || {}).value);
 		var service = toNumber((scope.querySelector('[data-cdac-cost="service"]') || {}).value);
-		var shipping = toNumber((scope.querySelector('[data-cdac-cost="shipping"]') || {}).value);
 		var tax = toNumber((scope.querySelector('[data-cdac-cost="tax"]') || {}).value);
 		var total = quantity * unit + service + shipping + tax;
 		var output = scope.querySelector('[data-cdac-total]');
